@@ -56,6 +56,7 @@ jobs:
     - name: Prepare files for artifact
       run: |
         mkdir artifact
+        mv ./plugins ./artifact/
         mv ./scripting ./artifact/
 
     - name: Zip plugin
